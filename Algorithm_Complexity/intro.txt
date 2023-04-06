@@ -39,7 +39,9 @@
     Evaluate program's efficiency when input is very big 
     Express the growth of progam's run time as input size grows
     Want to put an upperbound on growth - as tight as possible 
-    We will lok at the largest factors, which eill takes longest time in run time 
+    We will lok at the largest factors, which eill takes longest time in run time
+    
+     
 
 
 

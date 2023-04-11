@@ -1,0 +1,81 @@
+#Efficiency in programming
+
+- PageRank Algorithm used for google for loading page on searches
+
+
+ -> Techniques to measure time Efficiency
+
+ 1. Measuring time to execute.
+ 2. Counting operation involved.
+ 3. Abstract notion of order of growth.
+
+    1. Measuring time 
+
+    Directly measuring time with time module
+
+    2. Counting operations 
+
+    counting number of operation involved
+
+    3. Order of growth
+    
+    prerequisites-
+
+    what do we want -
+    Evaluate the Algorithm
+    Evaluate Scalability
+    Evaluate in terms of input size
+
+
+    #Cases
+    Taking example of finding an elelment in an array 
+    Best case -  1st element  is that element
+    Avg case - The element is in the middle
+    Worst case - The element is in last
+
+    //Always think for worst case while writing a program
+
+    #Goals
+    Evaluate program's efficiency when input is very big 
+    Express the growth of progam's run time as input size grows
+    Want to put an upperbound on growth - as tight as possible 
+    We will lok at the largest factors, which eill takes longest time in run time
+
+
+    Order of growth is denoted by Big Oh notation
+    Steps to evaluate 
+    1. Evaluate the number of operations
+    2. Write down in an equations
+    3. Remove additive constants
+    4. Remove multiplicative constantrs
+
+
+    n^2 + 2n + 2 => 
+    n^2 + 2n => n^2 +n => n^2 (We will look at the largest factor at runtime)
+
+    n^2 + 100000n 3^1000
+    n^2 + 100000n => n^2 + n => n^2
+
+    log(n) + n + 4 => log(n) + n => n
+
+    0.0001*n*log(n) + 300n => n*log(n) + 300n => n*log(n)
+
+    2n^30 +3^n => n^30 +3^n (polynomial or exponential for big numbers ) => 3^n
+
+
+    #Types of order of growth 
+
+    1. Constant -> Time taken by the program doesn't input size 
+    2. Linear -> this means as you are incrementing input time is also increasing linearly
+    3. Quadratic - > if input is getting increased by n then time will increase by n^2 
+    4. Logarithmic -> Irrespective of increasing in onput the time is merely increasing
+    5. n Log(n)  - 
+    6. Exponential - take too much time for a lil input size 
+
+
+    n > n*log(n) > n^2
+
+   
+
+
+
